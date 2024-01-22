@@ -274,7 +274,7 @@ h1{
     }
     .custom-list {
         padding-left: 2px;
-        margin-bottom: 4px; /* Adjust the padding-left as needed */
+        margin-bottom: 4px; 
     }
     #button-container{
         display: flex;
@@ -284,7 +284,7 @@ h1{
     }
     .custom-list {
         padding-left: 0px;
-        margin-bottom: 4px; /* Adjust the padding-left as needed */
+        margin-bottom: 4px; 
     }
     .btn-secondary {
         flex-grow: 3; 
@@ -309,6 +309,12 @@ h1{
         font-size: 17px;
         padding-left: 10px;
         padding-bottom: 5px;
+    }
+}
+/* ------------------- Medium Screens ------------------- */
+@media all and (min-width: 768px){
+    #about-text-container{
+        padding-left: 8px;
     }
 }
 /* ------------------- Smaller Screens ------------------- */
@@ -361,6 +367,87 @@ h1{
         --bs-popover-max-width: 500px;
         --bs-popover-body-padding-x: 1rem;
         --bs-popover-body-padding-y: .5rem;
+    }
+}
+/* ------------------- Experience Page ------------------- */
+.box-exp{
+    padding: 10px;
+    margin-left: 10px;
+    
+}
+.card{
+    border: 2px solid #412A4C;
+    background-color: #2B1B33;
+    box-sizing: border-box;
+    transition: transform 0.3s ease; 
+}
+.card:hover {
+    transform: scale(1.1); /* Scale the card to 1.1 times its original size on hover */
+}
+.card-body{
+    background-color: #2B1B33;
+}
+.card-img-top{
+    background-color: #2B1B33;
+}
+.card-title{
+    color: white;
+    font-family: 'Poppins';
+    font-weight: 400;
+    text-align: center;
+}
+.experience-title{
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 200;
+    letter-spacing: 1px;
+    font-size: 22px;
+}
+/* ------------------- Large Screens ------------------- */
+@media all and (min-width: 992px) {
+    .row-cols-md-4 .col {
+        flex: 0 0 23%; /* Set the width of each column to 25% */
+        max-width: 25%; /* Set the maximum width of each column to 25% */
+    }
+    .card-img-top{
+        margin-left: 40px;
+        margin-top: 20px;
+        max-width: 65%; /* Make the card image take the full width of its container */
+        height: auto; /* Maintain the aspect ratio of the original image */
+        max-height: 145px;
+    }
+    .card{
+        padding-bottom: 0px;
+        width: 100%; /* Make the card take the full width of its container */
+        height: 100%;
+        margin-top: 10px;
+    }
+    #card-container{
+        margin-right: 20px;
+        margin-left: 50px;
+    }
+}
+/* ------------------- Medium Screens ------------------- */
+@media all and (min-width: 992px){
+    .card-img-top{
+        margin-left: 30px;
+        margin-top: 20px;
+        max-width: 65%; /* Make the card image take the full width of its container */
+        height: auto; /* Maintain the aspect ratio of the original image */
+        max-height: 145px;
+    }
+}
+/* ------------------- Smaller Screens ------------------- */
+@media all and (max-width: 992px) {
+    .card-img-top{
+        margin-left: 30px;
+        margin-top: 20px;
+        max-width: 65%; /* Make the card image take the full width of its container */
+        height: auto; /* Maintain the aspect ratio of the original image */
+        max-height: 145px;
+    }
+    .card{
+        margin-top: 10px;
     }
 }
 /* ------------------- Custom Scroll Bar ------------------- */
