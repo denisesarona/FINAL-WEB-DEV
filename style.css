@@ -412,9 +412,9 @@ h1{
     .card-img-top{
         margin-left: 40px;
         margin-top: 20px;
-        max-width: 65%; /* Make the card image take the full width of its container */
+        max-width: 60%; /* Make the card image take the full width of its container */
         height: auto; /* Maintain the aspect ratio of the original image */
-        max-height: 145px;
+        max-height: 140px;
     }
     .card{
         padding-bottom: 0px;
