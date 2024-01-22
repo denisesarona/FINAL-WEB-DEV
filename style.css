@@ -309,7 +309,7 @@ h1{
     }
 }
 /* ------------------- Smaller Screens ------------------- */
-@media all and (max-width: 991px) {
+@media all and (max-width: 600px) {
     .py-custom{
         padding: 10px;
     }
@@ -324,7 +324,7 @@ h1{
         width: 90px; 
         padding: 10px 20px;
         flex-grow: 1;
-        margin: 8px;
+        margin: 7px;
         font-size: 10px;
         margin-top: 5px;
     }
