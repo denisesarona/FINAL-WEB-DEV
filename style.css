@@ -261,7 +261,7 @@ h1{
         box-shadow:  -5px 7px 15px #140d18;
     }
     #popover-button{
-        width: 150px; 
+        width: auto; 
         padding: 10px 30px;
         flex-grow: 1;
         margin: 17px;
@@ -277,6 +277,9 @@ h1{
         margin-bottom: 4px; /* Adjust the padding-left as needed */
     }
     #button-container{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
         margin-top: 10px;
     }
     .custom-list {
@@ -320,10 +323,16 @@ h1{
         padding-left: 25px;
         box-shadow:  -2px 5px 11px #140d18;
     }
+    #button-container{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 10px;
+    }
     #popover-button{
-        width: 90px; 
+        width: auto; 
         padding: 10px 20px;
-        flex-grow: 1;
+        flex-grow: 1; /* Adjust the flex-grow value as needed */
         margin: 8px;
         font-size: 10px;
         margin-top: 5px;
