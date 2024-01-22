@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Denise Sarona</title>
+</head>
+<body>
+    <!------------------- Navigation Bar ------------------->
+    <nav class="navbar  fixed-top navbar-expand-lg bg-custom-success navbar-dark py-2 ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Denix</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end bg-custom-success" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">&nbsp;</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body bg-custom-success">
+              <ul class="navbar-nav ml-auto px-lg-3 justify-content-end align-items-center flex-grow-1 pe-3">
+                <li class="nav-item px-lg-4">
+                  <a class="nav-link active px-lg-2" aria-current="page" href="#homepage">Home</a>
+                </li>
+                <li class="nav-item px-lg-5">
+                  <a class="nav-link px-lg-2" href="#aboutpage">About Me</a>
+                </li>
+                <li class="nav-item px-lg-4">
+                    <a class="nav-link px-lg-2" href="#">Experience</a>
+                  </li>
+                  <li class="nav-item px-lg-4">
+                    <a class="nav-link px-lg-2" id="contact" href="#">Contact</a>
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    <!------------------- Custom Scroll Bar ------------------->
+    <div class="scrollbar scrollbar-lady-lips">
+      <div class="force-overflow"></div>
+    </div>
+    <!------------------- Home Page ------------------->
+    <section class="bg-custom-success text-light p-5 text-center text-sm-start pb-lg-0" id="homepage">
+        <div class="container">
+            <div class="d-sm-flex align-items-center justify-content-between">
+                <div class="row">
+                    <div class="col-md-6 text-md-left text-center mt-custom pl-lg-5">
+                        <h1>Mobile Full Stack Developer</h1>
+                        <p class="lead my-4">
+                            Passionate and results-driven Mobile Full Stack Developer with a proven track record of creating robust and scalable mobile applications.
+                        </p>
+                        <button class="btn bg-custom-secondary btn-lg text-light my-2">Projects</button>
+                    </div>
+                    <div class="col-md-6 mt-3 mt-md-0 center-right-image d-none d-md-block" >
+                        <img class="img-fluid" src="images/denn.png" alt="" id="denimage">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!------------------- About Me Page ------------------->
+    <section class="bg-custom-primary p-5" id="aboutpage">
+        <div class="container ">
+            <div class="d-md-flex justify-content-between align-items-center mt-lg-5" >
+                <div class="vstack gap-3 mx-lg-3" id="box-box-container">
+                      <div class="box-container bg-custom-success py-custom  mt-3" id="box-container">
+                        <span class="span-text">Education</span>
+                        <div class="cls align-items-center flex-row justify-content-center" id="button-container">
+                          <button type="button" class="btn btn-secondary "
+                            data-bs-toggle="popover" data-bs-placement="right"
+                            data-bs-custom-class="custom-popover"
+                            data-bs-title="Elementary"
+                            data-bs-content="Graduated at Nuevo de Febrero Elementary School at Mandaluyong City" id="popover-button" data-bs-trigger="focus">
+                            Elementary
+                          </button>
+                          <button type="button" class="btn btn-secondary "
+                            data-bs-toggle="popover" data-bs-placement="right"
+                            data-bs-custom-class="custom-popover"
+                            data-bs-title="Highschool"
+                            data-bs-content="Graduated at Amaya School of Home Industries in Tanza, Cavite" id="popover-button" data-bs-trigger="focus">
+                            Highschool
+                          </button>
+                          <button type="button" class="btn btn-secondary"
+                            data-bs-toggle="popover" data-bs-placement="right"
+                            data-bs-custom-class="custom-popover"
+                            data-bs-title="College"
+                            data-bs-content="Currently in 3rd year of college taking Bachelor of Science in Information Technology" id="popover-button" data-bs-trigger="focus">
+                            College
+                          </button>
+                          </div>
+                      </div>
+                    <div class="bg-custom-success py-custom" id="box-container">
+                      <span class="span-text">Interest</span>
+                      <div class="cls align-items-center flex-row justify-content-center" id="button-container" >
+                        <button type="button" class="btn btn-secondary"
+                        data-bs-toggle="popover" data-bs-placement="right"
+                        data-bs-custom-class="custom-popover"
+                        data-bs-title="Games"
+                        data-bs-html="true"
+                        data-bs-content="
+                            <ol class='custom-list'>
+                                <li>1. Call of Duty: Mobile</li>
+                                <li>2. Genshin Impact</li>
+                                <li>3. Mobile Legends: Bang Bang</li>
+                            </ol>
+                        " id="popover-button" data-bs-trigger="focus">
+                        Games
+                        </button>
+                        <button type="button" class="btn btn-secondary"
+                        data-bs-toggle="popover" data-bs-placement="right"
+                        data-bs-custom-class="custom-popover"
+                        data-bs-title="Music"
+                        data-bs-html="true"
+                        data-bs-content="
+                            <ol class='custom-list'>
+                                <li>1. Heartbreak Girl</li>
+                                <li>2. Sanctuary</li>
+                                <li>3. Ocean Eyes</li>
+                            </ol>
+                        " id="popover-button" data-bs-trigger="focus">
+                        Music
+                        </button>
+                        <button type="button" class="btn btn-secondary"
+                        data-bs-toggle="popover" data-bs-placement="right"
+                        data-bs-custom-class="custom-popover"
+                        data-bs-title="Manhwa"
+                        data-bs-html="true"
+                        data-bs-content="
+                            <ol class='custom-list'>
+                                <li>1. Solo Leveling</li>
+                                <li>2. World After Fall</li>
+                                <li>3. Omniscent Reader</li>
+                            </ol>
+                        " id="popover-button" data-bs-trigger="focus">
+                        Manhwa
+                        </button>
+                      </div>
+                    </div>
+                    <div class="bg-custom-success py-custom mb-3" id="box-container">
+                      <span class="span-text">Achievement</span>
+                      <div class="cls align-items-center flex-row justify-content-center" id="button-container">
+                        <button type="button" class="btn btn-secondary"
+                        data-bs-toggle="popover" data-bs-placement="right"
+                        data-bs-custom-class="custom-popover"
+                        data-bs-title="Academics"
+                        data-bs-html="true"
+                        data-bs-content="
+                            <ol class='custom-list'>
+                                <li>1. With Honors in Highschool</li>
+                                <li>2. With High Honors in Senior High</li>
+                                <li>3. Dean Lister in College</li>
+                            </ol>
+                        " id="popover-button" data-bs-trigger="focus">
+                        Academics
+                        </button>
+                        <button type="button" class="btn btn-secondary"
+                        data-bs-toggle="popover" data-bs-placement="right"
+                        data-bs-custom-class="custom-popover"
+                        data-bs-title="Work"
+                        data-bs-html="true"
+                        data-bs-content="
+                            <ol class='custom-list'>
+                                <li>1. Best in Attendance</li>
+                                <li>2. Most Presentable Crew</li>
+                                <li>3. Rookie of the Month</li>
+                            </ol>
+                        " id="popover-button" data-bs-trigger="focus">
+                        Work
+                        </button>
+                        <button type="button" class="btn btn-secondary"
+                        data-bs-toggle="popover" data-bs-placement="right"
+                        data-bs-custom-class="custom-popover"
+                        data-bs-title="Life"
+                        data-bs-html="true"
+                        data-bs-content="
+                            <ol class='custom-list'>
+                                <li>1. Being independent at an early age</li>
+                                <li>2. Made my parents proud</li>
+                                <li>3. Bought my own laptop</li>
+                            </ol>
+                        " id="popover-button" data-bs-trigger="focus">
+                        Life
+                        </button>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-md-4 " id="about-text-container">
+                    <h4 class="about" id="about-title">About Me</h4>
+                    <h2 class="about" id="about-name">Hello! I'm Denise Krystian R. Sarona</h2>
+                    <p class="about" id="about-quote">Simple things should be simple, complex things should be possible.</p>
+                    <p class="about" id="about-me-text">
+                      I'm passionate about coding and love diving into the world of programming to create innovative solutions. When I'm not immersed in lines of code, you'll likely find me dominating the virtual battlefield in Call of Duty Mobile. I'm not just a coding enthusiast; I'm also an extroverted soul, thriving in the company of friends. Whether it's writing code or enjoying a gaming session, I'm all about the perfect blend of tech and camaraderie. Let's connect and share our coding adventures and gaming triumphs!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script>
+      const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+    </script>
+</body>
+</html>

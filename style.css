@@ -1,0 +1,369 @@
+/* ------------------- Google Fonts ------------------- */
+/* ------------------- Poppins ------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+/* ------------------- Roboto Slab ------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Roboto+Slab:wght@400;500;600;700;800&display=swap');
+*{
+    font-family: "Roboto Slab", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+/* ------------------- Body ------------------- */
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+  }
+section {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+}
+/* ------------------- Colors ------------------- */
+.bg-custom-primary {
+    background-color: #2B1B33 !important; 
+}
+.bg-custom-secondary {
+    background-color: #3E274A !important; 
+}
+.bg-custom-success {
+    background-color: #2F1E38!important; 
+}
+/* ------------------- Navigation Bar ------------------- */
+.navbar-brand{
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 35px;
+    color: white !important;
+    padding-left: 40px;
+}
+.center-right-image {
+    position: absolute;
+    top: 55%;
+    left: 30%;
+    transform: translateY(-100%);
+    max-width: 100%;
+}
+.nav-link{
+    font-family: 'Poppins';
+    font-weight: bold;
+    color: white !important;
+    text-transform: uppercase;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    font-size: 16px;
+}   
+.offcanvas-header .btn-close {
+    margin-top: 19px;
+    margin-right: 2px;
+    margin-bottom: 30px;
+}
+.offcanvas-body .navbar-nav .nav-link {
+    line-height: 2; 
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+.offcanvas-body .navbar-nav .nav-link:hover {
+    background: #3E274A;
+      color: #ffffff;
+      padding: 10px;
+      padding-left: 20px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 10px rgba(255, 255, 255, 0.3), inset 5px 5px 10px rgba(0, 0, 0, 0.1), inset -5px -5px 10px rgba(255, 255, 255, 0.3);
+      cursor: pointer;
+      border: 2px solid rgba(255, 255, 255, 0.7);
+      transform: scale(0.9); 
+}
+.offcanvas-body .navbar-nav .nav-link:hover {
+    background: #3E274A;
+    color: #ffffff;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 10px rgba(255, 255, 255, 0.3), inset 5px 5px 10px rgba(0, 0, 0, 0.1), inset -5px -5px 10px rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+}
+.navbar-toggler{
+    border: none;
+}
+/* ------------------- Larger Screens ------------------- */
+@media all and (min-width: 992px) {
+    .nav-link {
+        background: #2F1E38;
+        color: black;
+        display: inline-block;
+        padding: 10px;
+        padding-left: 20px;
+        transition: background 0.4s, box-shadow 0.4s, color 0.4s;
+    }
+    .nav-link:hover {
+        background: #3E274A;
+        color: #ffffff;
+        padding: 10;
+        padding-left: 30px; 
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 10px rgba(255, 255, 255, 0.3), inset 5px 5px 10px rgba(0, 0, 0, 0.1), inset -5px -5px 10px rgba(255, 255, 255, 0.3);
+        cursor: pointer;
+        border: 2px solid rgba(255, 255, 255, 0.7);
+    }
+}
+/* ------------------- Smaller Screens ------------------- */
+@media all and (max-width: 991px) {
+    .nav-link {
+        background: #2F1E38;
+        color: black;
+        display: inline-block;
+        padding: 10px;
+        padding-left: 20px;
+        margin-bottom: 50px; 
+        margin-left: 20px; 
+        transition: background 0.4s, box-shadow 0.4s, color 0.4s;
+    }
+    .nav-link:hover {
+        background: #3E274A;
+        color: #ffffff;
+        padding: 10;
+        padding-left: 30px; 
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 10px rgba(255, 255, 255, 0.3), inset 5px 5px 10px rgba(0, 0, 0, 0.1), inset -5px -5px 10px rgba(255, 255, 255, 0.3);
+        cursor: pointer;
+        border: 2px solid rgba(255, 255, 255, 0.7);
+    }
+}
+/* ------------------- Home Page ------------------- */
+h1{
+    line-height: 37px;
+}
+.center-right-image {
+    position: absolute;
+    top: 86%;
+    left: 60%;
+    transform: translateY(-100%);
+    max-width: 100%;
+}
+.mt-custom {
+    margin-top: 12rem !important;
+}
+#denimage{
+    height: 400px;
+}
+/* ------------------- About Me Page ------------------- */
+.about{
+    color: white;
+}
+.span-text{
+    color: white;
+    font-weight: 600;
+    font-family:'Poppins';
+    letter-spacing: 1px;
+    margin-top: -10px;
+}
+#popover-button{
+    font-family: 'Poppins';
+    border: none;
+}
+.about{
+    font-family: 'Poppins';
+}
+#about-quote{
+    font-style: italic;
+    color: #FFFFFF;
+}
+#about-me-text{
+    color: #9e9b9e;
+}
+#about-title{
+    color: #777377;
+}
+.custom-popover {
+    --bs-popover-border-color: var(--bd-violet-bg);
+    --bs-popover-header-bg: var(--bd-violet-bg);
+    --bs-popover-header-color: var(--bs-white);
+    --bs-popover-body-color: var(--bs-white);
+    background-color: #7C5C8C;
+    border-radius: 16px; 
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);  
+}
+.popover-header {
+    background-color: #7C5C8C; 
+    color: #FFFFFF;
+    font-weight: 700;
+    border: none; 
+    border-radius: 10px;
+    padding: 10px;
+    padding-left: 15px;
+    margin-bottom: 15px;
+}
+.bs-popover-auto[data-popper-placement^=right]>.popover-arrow::after,
+.bs-popover-end>.popover-arrow::after {
+    left: var(--bs-popover-border-width);
+    border-right-color: #7C5C8C; 
+}
+.bs-popover-auto[data-popper-placement^=top] > .popover-arrow::after,
+.bs-popover-top > .popover-arrow::after {
+    top: var(--bs-popover-border-width); 
+    border-top-color: #7C5C8C; 
+}
+.bs-popover-auto[data-popper-placement^=bottom] > .popover-arrow::after,
+.bs-popover-bottom > .popover-arrow::after {
+    bottom: var(--bs-popover-border-width);
+    border-bottom-color: #7C5C8C; 
+}
+.custom-popover .popover-body {
+    margin-top: -25px; 
+}
+.custom-list {
+    padding-left: 0px;
+    margin-bottom: 4px; /* Adjust the padding-left as needed */
+}
+#popover-button{
+    background-color: #3E274A;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out; 
+}
+#popover-button:hover,
+#popover-button:active {
+    transform: scale(1.05); /* Adjust the scale factor as needed */
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.3);
+}
+/* ------------------- Larger Screens ------------------- */
+@media all and (min-width: 992px) {
+    .py-custom{
+        padding: 20px;
+        padding-top: 4px;
+    }
+    #box-box-container{
+        margin-top: -30px;
+    }
+    #box-container{
+        margin-left: 10px;
+        margin-right: 70px;
+        margin-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 10px;
+        padding-top:30px;
+        padding-left: 50px;
+        padding-right: 10px;
+        box-shadow:  -5px 7px 15px #140d18;
+    }
+    #popover-button{
+        width: 150px; 
+        padding: 10px 30px;
+        flex-grow: 1;
+        margin: 17px;
+        margin-top: 0px;
+    }
+    .popover-header {
+        font-size: 19px;
+        padding-top: 20px;
+        padding-left: 15px;
+    }
+    .custom-list {
+        padding-left: 2px;
+        margin-bottom: 4px; /* Adjust the padding-left as needed */
+    }
+    #button-container{
+        margin-top: 10px;
+    }
+    .custom-list {
+        padding-left: 0px;
+        margin-bottom: 4px; /* Adjust the padding-left as needed */
+    }
+    .btn-secondary {
+        flex-grow: 3; 
+        margin: 5px; 
+    }
+    .span-text{
+        font-size: 25px;
+    }
+    #about-title{
+        font-size: 16px;
+    }
+    #about-name{
+        font-size: 40px;
+    }
+    #about-me-text{
+        font-size: 16px;
+    }
+    .custom-popover {
+        --bs-popover-max-width: 300px;
+        --bs-popover-body-padding-x: 1rem;
+        --bs-popover-body-padding-y: .5rem;
+        font-size: 17px;
+        padding-left: 10px;
+        padding-bottom: 5px;
+    }
+}
+/* ------------------- Smaller Screens ------------------- */
+@media all and (max-width: 991px) {
+    .py-custom{
+        padding: 10px;
+    }
+    #box-container{
+        border-radius: 10px;
+        padding-top: 15px;
+        padding-right: 10px;
+        padding-left: 25px;
+        box-shadow:  -2px 5px 11px #140d18;
+    }
+    #popover-button{
+        width: 90px; 
+        padding: 10px 20px;
+        flex-grow: 1;
+        margin: 8px;
+        font-size: 10px;
+        margin-top: 5px;
+    }
+    #popover-button:hover {
+        box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.3);
+    }
+    .span-text{
+        font-size: 16px;
+    }
+    #about-title{
+        font-size: 10px;
+    }
+    #about-name{
+        font-size: 20px;
+    }
+    #about-me-text{
+        font-size: 12px;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+    #about-quote{
+        font-size: 13px;
+    }
+    .custom-popover {
+        --bs-popover-max-width: 500px;
+        --bs-popover-body-padding-x: 1rem;
+        --bs-popover-body-padding-y: .5rem;
+    }
+}
+/* ------------------- Custom Scroll Bar ------------------- */
+::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-track {
+    background: #2F1E38;
+}
+::-webkit-scrollbar-thumb {
+    background: #2B1B33;
+    border-radius: 10px;
+    border: 2px #7C5C8C solid;
+    height: 5px;
+}
