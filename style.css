@@ -309,7 +309,7 @@ h1{
     }
 }
 /* ------------------- Smaller Screens ------------------- */
-@media all and (max-width: 600px) {
+@media all and (max-width: 991px) {
     .py-custom{
         padding: 10px;
     }
@@ -322,7 +322,7 @@ h1{
     }
     #popover-button{
         width: 90px; 
-        padding: 10px 20px;
+        padding: 10px 10px;
         flex-grow: 1;
         margin: 7px;
         font-size: 10px;
