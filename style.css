@@ -354,7 +354,7 @@ h1{
         --bs-popover-body-padding-y: .5rem;
     }
 }/* ------------------- Smaller Screens ------------------- */
-@media all and (max-width: 475px) {
+@media all and (max-width: 640px) {
     .py-custom {
         padding: 10px;
     }
