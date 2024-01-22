@@ -334,7 +334,7 @@ h1{
         padding: 10px 20px;
         flex-grow: 1; /* Adjust the flex-grow value as needed */
         margin: 8px;
-        font-size:  .7rem;
+        font-size:  .6rem;
         margin-top: 5px;
     }
     #popover-button:hover {
