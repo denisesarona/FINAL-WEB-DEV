@@ -366,11 +366,11 @@ h1{
         box-shadow: -2px 5px 11px #140d18;
     }
     #popover-button {
-        width: 50px; /* Adjust the width as needed */
-        padding: 8px 10px; /* Adjust the padding as needed */
+        width: 75px; /* Adjust the width as needed */
+        padding: 8px 12px; /* Adjust the padding as needed */
         flex-grow: 1;
         margin: 8px;
-        font-size: 8px; /* Adjust the font size as needed */
+        font-size: 9px; /* Adjust the font size as needed */
         margin-top: 5px;
     }
     #popover-button:hover {
