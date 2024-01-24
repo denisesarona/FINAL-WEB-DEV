@@ -553,6 +553,24 @@ footer{
 .form-container #loginbtn:hover {
     transform: scale(1.06);
 }
+
+a.contact-link{
+    text-decoration: none;
+    transition: transform 0.3s ease;
+    color: black;
+}
+
+a.contact-link:hover{
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+.footer-svg-container{
+    transition: transform 0.3s ease;
+    color: white;
+}
+.footer-svg-container:hover{
+    transform: scale(1.1);
+}
 /* ------------------- Larger Screens ------------------- */
 @media all and (min-width: 1020px) {
     footer{
@@ -627,14 +645,14 @@ footer{
         display: inline-block;
         color: white;
         margin-top:-10px;
-        margin-left: 15px;
+        margin-left: 10px;
         transition: 0.5s;
     }
     .icon-container{
         margin-right: 100px;
         margin-top: -15px;
-        color: white;
     }
+    
 }
 /* ------------------- Smaller Screens ------------------- */
 @media all and (max-width: 992px) {
