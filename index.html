@@ -50,14 +50,18 @@
             <div class="d-sm-flex align-items-center justify-content-between">
                 <div class="row">
                     <div class="col-md-6 text-md-left text-center mt-custom pl-lg-5">
-                        <h1>Mobile Full Stack Developer</h1>
+                        <h1 class="header-home">Mobile Full <br>Stack Developer</h1>
                         <p class="lead my-4">
                             Passionate and results-driven Mobile Full Stack Developer with a proven track record of creating robust and scalable mobile applications.
                         </p>
-                        <a href="#projects" id="project" class="btn bg-custom-secondary btn-lg text-light my-2">Projects</a>
+                        <a href="#projects" id="project-button" class="btn text-light my-2">Projects</a>
                     </div>
-                    <div class="col-md-6 mt-3 mt-md-0 center-right-image d-none d-md-block" >
-                        <img class="img-fluid" src="images/home/denn.png" alt="" id="denimage">
+                    <div class="col-md-6">
+                      <div class="my-pic d-none d-md-block">
+                        <video width="100%" height="auto" autoplay loop muted disablepictureinpicture>
+                          <source src="images/home/mememe.mp4" type="video/mp4"/>
+                        </video>
+                      </div>
                     </div>
                 </div>
             </div>
@@ -68,7 +72,7 @@
         <div class="container ">
             <div class="d-md-flex justify-content-between align-items-center mt-lg-5" >
                 <div class="vstack gap-3 mx-lg-3 mx-md-4" id="box-box-container">
-                      <div class="box-container bg-custom-success py-custom  mt-3" id="box-container">
+                      <div class="box-container bg-custom-secondary py-custom  mt-3" id="box-container">
                         <span class="span-text">Education</span>
                         <div class="cls align-items-center flex-row justify-content-center" id="button-container">
                           <button type="button" class="btn btn-secondary "
@@ -94,7 +98,7 @@
                           </button>
                           </div>
                       </div>
-                    <div class="bg-custom-success py-custom" id="box-container">
+                    <div class="bg-custom-secondary py-custom" id="box-container">
                       <span class="span-text">Interest</span>
                       <div class="cls align-items-center flex-row justify-content-center" id="button-container" >
                         <button type="button" class="btn btn-secondary"
@@ -141,7 +145,7 @@
                         </button>
                       </div>
                     </div>
-                    <div class="bg-custom-success py-custom mb-3" id="box-container">
+                    <div class="bg-custom-secondary py-custom mb-3" id="box-container">
                       <span class="span-text">Achievement</span>
                       <div class="cls align-items-center flex-row justify-content-center" id="button-container">
                         <button type="button" class="btn btn-secondary"
@@ -201,11 +205,66 @@
         </div>
     </section>
     <!------------------- Projects Page ------------------->
-    <section class="bg-custom-primary" id="projects">
-
+    <section class="p-5" id="projects">
+      <div class="container-project">
+        <div class="row row-cols-1 row-cols-md-2 g-1">
+            <div class="col-md-4">
+                <h1 class="project-title">Projects</h1>
+                <p class="project-text">Welcome to my Project Page! Dive into the world of mobile app development with three exciting projects that showcase my passion and expertise. Each app is a unique creation, blending innovation with functionality. Join me on this exciting adventure, where technology meets creativity!
+                </p>
+            </div>
+            <div class="col-md-8">
+                <div class="video-container">
+                    <video width="100%" height="auto" autoplay loop muted disablepictureinpicture>
+                        <source src="images/projects/finalapp.mp4" type="video/mp4" />
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+      <div class="home-project">
+      
+        <ul class="project-ul">
+          <li class="project-sort">Filter by</li>
+          <li class="project-sort">All /</li>
+          <li class="project-sort">Mobile App Development /</li>
+          <li class="project-sort">Web Development /</li>
+        </ul>
+        <div class="row row-cols-1 row-cols-md-2 g-4" id="projects-items">
+          <div class="col">
+            <div class="p-card" id="project-clock">
+              <img src="images/projects/myclock.png" class="project-img-top" alt="..." id="clock-app">
+              <div id="other-card">
+                <h5 class="project-card-title">Minimalist Clock</h5>
+                <p class="project-card-text">Mobile App Development</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+          <div>
+            <div class="p-card">
+              <img src="images/projects/dreamlist.png" class="pproject-img-top" alt="..." id="project-card-container">
+              <div id="other-card">
+                <h5 class="project-card-title">Dream List: A To Do App</h5>
+                <p class="project-card-text">Mobile App Development</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="p-card border-0" id="other-card">
+              <img src="images/projects/toggle-app.png" class="pproject-img-top" alt="..." id="project-card-container" class="border-0">
+              <div id="other-card">
+                <h5 class="project-card-title">Toggle App: Light and Dark Mode</h5>
+                <p class="project-card-text">Mobile App Development</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
     </section>
     <!------------------- Experience Page ------------------->
-    <section class="p-5" id="experience">
+    <section class="p-5 mt-4" id="experience">
       <div class="container" id="card-container">
         <span class="experience-title d-flex justify-content-center">Experience</span>
         <div class="row row-cols-2 row-cols-md-4 g-4" id="card-container">
@@ -283,60 +342,60 @@
           <div class="row">
             <span class="contact-title d-flex justify-content-center">CONTACT</span>
               <div class="col-md-3 col-lg-6 text-left pl-lg-5" id="contact-items-container">
-                  <h4 class="contact-text" id="contact-header">Drop Me a Message</h4>
-                  <p class="contact-text lead my-4" id="paragraph-text">
-                      Passionate and results-driven Mobile Full Stack Developer with a proven track record of creating robust and scalable mobile applications.
-                  </p>
-                  <ul class="contact-ul">
-                    <li>
-                      <a href="tel: 09814377193" target="_blank" class="contact-link">
-                      <div class="svg-container">
+                <h4 class="contact-text" id="contact-header">Drop Me a Message</h4>
+                <p class="contact-text lead my-4" id="paragraph-text">
+                  Passionate and results-driven Mobile Full Stack Developer with a proven track record of creating robust and scalable mobile applications.
+                </p>
+                <ul class="contact-ul">
+                  <li>
+                    <a href="tel: 09814377193" target="_blank" class="contact-link">
+                    <div class="svg-container">
                       <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
                         <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
                       </svg>
                     </div>
-                  </a>
+                    </a>
                     <p class="contact-text" id="contact-info-text">+639 814377193</p>
-                    </li>
-                    <li>
-                      <a href="https://mail.google.com/mail/u/1/?fs=1&to=denisesaronaa@gmail.com&tf=cm" target="_blank" class="contact-link">
-                      <div class="svg-container">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
-                          <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
-                        </svg>
-                      </div>
-                      </a>
-                      <p class="contact-text" id="contact-info-text">denisesaronaa@gmail.com</p>
-                    </li>
-                    <li>
-                      <a href="https://www.instagram.com/deniseezy?igsh=cmxsbzZhN2c2MGl1" target="_blank" class="contact-link">
-                      <div class="svg-container">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-                          <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
-                        </svg>
-                      </div>
-                      </a>
-                      <p class="contact-text" id="contact-info-text">deniseezy</p>
-                    </li>
-                  </ul>
-                  </div>
+                  </li>
+                  <li>
+                    <a href="https://mail.google.com/mail/u/1/?fs=1&to=denisesaronaa@gmail.com&tf=cm" target="_blank" class="contact-link">
+                    <div class="svg-container">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                      </svg>
+                    </div>
+                    </a>
+                    <p class="contact-text" id="contact-info-text">denisesaronaa@gmail.com</p>
+                  </li>
+                  <li>
+                    <a href="https://www.instagram.com/deniseezy?igsh=cmxsbzZhN2c2MGl1" target="_blank" class="contact-link">
+                    <div class="svg-container">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                      </svg>
+                    </div>
+                    </a>
+                    <p class="contact-text" id="contact-info-text">deniseezy</p>
+                  </li>
+                </ul>
+            </div>
                 <div class="form-container">
-                    <form action="form.php" method="post">
-                      <div class="input-box">
-                          <input type="text" placeholder="Name" id="username" name="username" required>
-                      </div>
-                      <div class="input-box">
-                        <input type="email" placeholder="Email" id="email" name="useremail" required>
-                      </div>
-                      <div class="input-box">
-                        <input type="text" placeholder="Subject" id="subject" name="usersubject" required>
-                      </div>
-                      <div class="input-box">
-                        <textarea placeholder="Message" id="message" name="usermessage" required></textarea>
-                      </div>
+                  <form>
+                    <div class="input-box">
+                      <input type="text" placeholder="Name" id="username" name="username" required>
+                    </div>
+                    <div class="input-box">
+                      <input type="email" placeholder="Email" id="email" name="useremail" required>
+                    </div>
+                    <div class="input-box">
+                      <input type="text" placeholder="Subject" id="subject" name="usersubject" required>
+                    </div>
+                    <div class="input-box">
+                      <textarea placeholder="Message" id="message" name="usermessage" required></textarea>
+                    </div>
                       <input type="submit" value="Send" id="loginbtn">
                   </form>
-              </div>
+                </div>
               </div>
           </div>
       </div>
