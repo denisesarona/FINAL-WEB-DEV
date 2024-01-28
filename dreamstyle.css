@@ -1,0 +1,262 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+/* ------------------- Roboto Slab ------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Roboto+Slab:wght@400;500;600;700;800&display=swap');
+*{
+    font-family: "Roboto Slab", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap');
+*{
+    font-family: 'Space Grotesk', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+/* ------------------- Body ------------------- */
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+    background-color: #2A1B30;
+    font-family: 'Poppins', sans-serif; /* Apply Poppins font to the entire document */
+    scroll-behavior: smooth;
+  }
+section {
+    min-height: 100vh;
+    position: relative;
+}
+/* ------------------- Colors ------------------- */
+.bg-custom-primary {
+    background-color: #2A1B30!important; 
+}
+.bg-custom-secondary {
+    background-color: #331D3A !important; 
+}
+.bg-custom-success { /*3b2a43*/
+    background-color: #2C1B33!important; 
+}
+.bg-custom-warning{
+    background-color: #7C5C8C!important;
+}
+/* ------------------- Navigation Bar ------------------- */
+.navbar-brand{
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 35px;
+    color: white !important;
+    padding-left: 40px;
+}
+.center-right-image {
+    position: absolute;
+    top: 55%;
+    left: 30%;
+    transform: translateY(-100%);
+    max-width: 100%;
+}
+.nav-link{
+    font-family: 'Poppins';
+    font-weight: bold;
+    color: white !important;
+    text-transform: uppercase;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    font-size: 16px;
+}   
+.offcanvas-header .btn-close {
+    margin-top: 19px;
+    margin-right: 2px;
+    margin-bottom: 30px;
+}
+.offcanvas-body .navbar-nav .nav-link {
+    line-height: 2; 
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+.offcanvas-body .navbar-nav .nav-link:hover {
+    background: #2C1B33;
+      color: #ffffff;
+      padding: 10px;
+      padding-left: 20px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 10px rgba(255, 255, 255, 0.3), inset 5px 5px 10px rgba(0, 0, 0, 0.1), inset -5px -5px 10px rgba(255, 255, 255, 0.3);
+      cursor: pointer;
+      border: 2px solid rgba(255, 255, 255, 0.7);
+      transform: scale(0.9); 
+}
+.offcanvas-body .navbar-nav .nav-link:hover {
+    background: #2C1B33;
+    color: #ffffff;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 10px rgba(255, 255, 255, 0.3), inset 5px 5px 10px rgba(0, 0, 0, 0.1), inset -5px -5px 10px rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+}
+.navbar-toggler{
+    border: none;
+}
+/* ------------------- Larger Screens ------------------- */
+@media all and (min-width: 992px) {
+    .nav-link {
+        background: #2C1B33;
+        color: black;
+        display: inline-block;
+        padding: 10px;
+        padding-left: 20px;
+        transition: background 0.4s, box-shadow 0.4s, color 0.4s;
+    }
+    .nav-link:hover {
+        background: #2C1B33;
+        color: #ffffff;
+        padding: 10;
+        padding-left: 30px; 
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 10px rgba(255, 255, 255, 0.3), inset 5px 5px 10px rgba(0, 0, 0, 0.1), inset -5px -5px 10px rgba(255, 255, 255, 0.3);
+        cursor: pointer;
+        border: 2px solid rgba(255, 255, 255, 0.7);
+    }
+}
+/* ------------------- Smaller Screens ------------------- */
+@media all and (max-width: 991px) {
+    .nav-link {
+        background: #2C1B33;
+        color: black;
+        display: inline-block;
+        padding: 10px;
+        padding-left: 20px;
+        margin-bottom: 50px; 
+        margin-left: 20px; 
+        transition: background 0.4s, box-shadow 0.4s, color 0.4s;
+    }
+    .nav-link:hover {
+        background: #2C1B33;
+        color: #ffffff;
+        padding: 10;
+        padding-left: 30px; 
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 10px rgba(255, 255, 255, 0.3), inset 5px 5px 10px rgba(0, 0, 0, 0.1), inset -5px -5px 10px rgba(255, 255, 255, 0.3);
+        cursor: pointer;
+        border: 2px solid rgba(255, 255, 255, 0.7);
+    }
+}
+/* ------------------- Back Button ------------------- */
+#back-button{
+    margin-top: 100px;
+    margin-left: 50px;
+    font-size: 35px;
+    border-radius: 95px;
+    padding-top: 0px;
+    font-weight:bolder;
+    color: #BCC5C6;
+    border-color: #3b2a43;
+    background-color: #3b2a43;
+}
+/* ------------------- Dream List App ------------------- */
+.app-container{
+    margin-left: 70px;
+    margin-right: 70px;
+}
+.image-container{
+    margin-bottom: 20px;
+}
+footer p{
+    color: white;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 20px;
+}
+.footer-container{
+    margin-left: 150px;
+}
+.header-container{
+    margin-left: 70px;
+    margin-right: 100px;
+    color: white;
+}
+.header-container h1{
+    font-size: 100px;
+    font-family: 'Poppins';
+    line-height: 90px;
+}
+.link-list li{
+    list-style: none;
+    display: inline;
+    margin-right: 10px;
+    font-family: 'Poppins';
+    font-size: 15px;
+}
+.link-list{
+    margin-left: -30px;
+    margin-top:70px;
+}
+.description{
+    font-family:'Poppins';
+    font-size: 18px;
+    font-weight: 600;
+    color: #BCC5C6;
+    letter-spacing: 0.5px;
+}
+#overall-container{
+    margin-bottom: 100px;
+    margin-top: 30px;
+}
+.list-group-horizontal {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.list-group-item {
+    text-align: right;
+    margin-left: 10px; /* Adjust the margin as needed */
+}
+
+/* Optional: Set a max-width for the ul */
+.list-group-horizontal li {
+    max-width: 200px; /* Adjust the max-width as needed */
+    margin-left: 10px; 
+    text-align: left;/* Push the list to the right edge */
+    background-color: transparent;
+    border: none;
+    color: #BCC5C6;
+    font-weight: 500;
+    font-size: 18px;
+}
+.desc-title {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-top: 1px solid #BCC5C6;
+    padding-top: 10px;
+}
+/* ------------------- Custom Scroll Bar ------------------- */
+::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-track {
+    background: #2A1B30;
+}
+::-webkit-scrollbar-thumb {
+    background: #2A1B30;
+    border-radius: 10px;
+    border: 2px #7C5C8C solid;
+    height: 5px;
+}
