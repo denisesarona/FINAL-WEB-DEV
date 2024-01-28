@@ -199,6 +199,7 @@ h1{
     transform: scale(1.05);
     box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.6), 0px 0px 8px rgba(0, 0, 0, 0.1);
 }
+/* ------------------- Large Screens ------------------- */
 @media all and (min-width: 992px) {
 .my-pic{
     margin-left: 400px;
@@ -218,6 +219,16 @@ h1{
     width:100%;
     height: auto;
 }}
+@media only screen and (max-width: 640px) {
+    .header-home{
+        font-size: 50px!important;
+        font-family: 'Poppins';
+        text-transform: uppercase;
+        line-height: 70px;
+        letter-spacing: 5px;
+        font-weight: 600;
+    }
+}
 /* ------------------- About Me Page ------------------- */
 .about{
     color: white;
@@ -434,6 +445,16 @@ h1{
         --bs-popover-body-padding-y: .5rem;
     }
 }
+@media only screen and (max-width: 640px){
+    #popover-button{
+        width: auto; 
+        padding: 10px 20px;
+        flex-grow: 1; /* Adjust the flex-grow value as needed */
+        margin: 8px;
+        font-size:  .5rem;
+        margin-top: 5px;
+    }
+}
 /* ------------------- Projects Page ------------------- */
 .project-title {
     color: white;
@@ -454,11 +475,13 @@ h1{
 .project-sort{
     color: white;
     font-family: 'Poppins';
+    font-size: 13px;
 }
 .project-card-title{
     font-family: 'Space Grotesk', sans-serif!important;
     font-weight: bold!important;
     color: white;
+    margin-top: 20px;
 }
 .project-card-text{
     color: white;
@@ -478,6 +501,36 @@ h1{
 video{
     display: block;
 }
+.p-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.project-img-top {
+    transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+}
+
+.project-img-top:hover {
+    transform: scale(1.05); /* Scale the image on hover */
+}
+.show-project-text{
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: transform 0.3s ease-in-out;
+}
+.show-project-text:hover {
+    text-decoration: underline;
+    font-size: 18.5px; /* Adjust the scale factor as needed */
+}
+#app-dream-list a{
+    text-decoration: none!important;
+}
+#other-card{
+    text-decoration: none!important;
+}
+
 /* ------------------- Large Screens ------------------- */
 @media all and (min-width: 992px) {
     .video-container {
@@ -504,11 +557,11 @@ video{
         max-width: 100%; 
     }
     .project-ul{
-        margin-left: 20px!important;
-        font-size: 15px;
+        margin-left: 5px!important;
     }
     .project-sort{
         margin-right: 10px; 
+        font-size: 15px;
     }
     .project-card-title{
         font-size: 25px;
@@ -709,6 +762,11 @@ video{
     }
     .card{
         margin-top: 10px;
+    }
+}
+@media only screen and (max-width: 640px){
+    .card-title{
+        font-size: 18px;
     }
 }
 /* ------------------- Contacts Page ------------------- */
@@ -1153,15 +1211,31 @@ a.contact-link:hover{
         padding-left: 70px;
     }
 }
+@media only screen and (max-width: 640px){
+    .footer-text{
+        font-size: 8px;
+    }
+    .footer-logo {
+        font-size: 15px;
+        margin-left: -90px;
+    }
+    footer svg{
+        width: 18px;
+    }
+    .icon-container {
+        margin-top: -40px;
+    }
+
+}
 /* ------------------- Custom Scroll Bar ------------------- */
 ::-webkit-scrollbar {
     width: 15px;
 }
 ::-webkit-scrollbar-track {
-    background: #372441;
+    background: #2A1B30;
 }
 ::-webkit-scrollbar-thumb {
-    background: #2B1B33;
+    background: #2A1B30;
     border-radius: 10px;
     border: 2px #7C5C8C solid;
     height: 5px;
