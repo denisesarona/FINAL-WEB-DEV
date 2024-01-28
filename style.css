@@ -23,12 +23,23 @@
     list-style: none;
     scroll-behavior: smooth;
 }
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap');
+*{
+    font-family: 'Space Grotesk', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
 /* ------------------- Body ------------------- */
 body, html {
     height: 100%;
     margin: 0;
     overflow-x: hidden;
-    background-color: #2B1B33;
+    background-color: #2A1B30;
     font-family: "Poppins", sans-serif; /* Apply Poppins font to the entire document */
     scroll-behavior: smooth;
   }
@@ -38,13 +49,13 @@ section {
 }
 /* ------------------- Colors ------------------- */
 .bg-custom-primary {
-    background-color: #2B1B33 !important; 
+    background-color: #2A1B30!important; 
 }
 .bg-custom-secondary {
-    background-color: #3E274A !important; 
+    background-color: #331D3A !important; 
 }
-.bg-custom-success {
-    background-color: #2F1E38!important; 
+.bg-custom-success { /*3b2a43*/
+    background-color: #2C1B33!important; 
 }
 .bg-custom-warning{
     background-color: #7C5C8C!important;
@@ -84,7 +95,7 @@ section {
     padding-bottom: 10px;
 }
 .offcanvas-body .navbar-nav .nav-link:hover {
-    background: #3E274A;
+    background: #2C1B33;
       color: #ffffff;
       padding: 10px;
       padding-left: 20px;
@@ -94,7 +105,7 @@ section {
       transform: scale(0.9); 
 }
 .offcanvas-body .navbar-nav .nav-link:hover {
-    background: #3E274A;
+    background: #2C1B33;
     color: #ffffff;
     padding: 10px;
     padding-left: 20px;
@@ -109,7 +120,7 @@ section {
 /* ------------------- Larger Screens ------------------- */
 @media all and (min-width: 992px) {
     .nav-link {
-        background: #2F1E38;
+        background: #2C1B33;
         color: black;
         display: inline-block;
         padding: 10px;
@@ -117,7 +128,7 @@ section {
         transition: background 0.4s, box-shadow 0.4s, color 0.4s;
     }
     .nav-link:hover {
-        background: #3E274A;
+        background: #2C1B33;
         color: #ffffff;
         padding: 10;
         padding-left: 30px; 
@@ -129,7 +140,7 @@ section {
 /* ------------------- Smaller Screens ------------------- */
 @media all and (max-width: 991px) {
     .nav-link {
-        background: #2F1E38;
+        background: #2C1B33;
         color: black;
         display: inline-block;
         padding: 10px;
@@ -139,7 +150,7 @@ section {
         transition: background 0.4s, box-shadow 0.4s, color 0.4s;
     }
     .nav-link:hover {
-        background: #3E274A;
+        background: #2C1B33;
         color: #ffffff;
         padding: 10;
         padding-left: 30px; 
@@ -160,11 +171,53 @@ h1{
     max-width: 100%;
 }
 .mt-custom {
-    margin-top: 12rem !important;
+    margin-top: 10rem !important;
 }
-#denimage{
-    height: 400px;
+
+.header-home{
+    font-size: 60px!important;
+    font-family: 'Poppins';
+    text-transform: uppercase;
+    line-height: 80px;
+    letter-spacing: 5px;
+    font-weight: 600;
 }
+#project-button {
+    background-color: #331D3A;
+    border: none;
+    width: 140px;
+    font-size: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-shadow: 0px 5px 18px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+#project-button:hover,
+#project-button:active {
+    transform: scale(1.05);
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.6), 0px 0px 8px rgba(0, 0, 0, 0.1);
+}
+@media all and (min-width: 992px) {
+.my-pic{
+    margin-left: 400px;
+    overflow: hidden;
+    max-width: 100%;
+    border: none;
+    outline: none;
+    margin-top: 30px;
+    margin-left: 60px;
+    overflow: hidden;
+    max-width: 100%;
+    border: none;
+    outline: none;
+    display: block;
+}#denimage{
+    margin-left:900px!important;
+    width:100%;
+    height: auto;
+}}
 /* ------------------- About Me Page ------------------- */
 .about{
     color: white;
@@ -188,7 +241,7 @@ h1{
     color: #FFFFFF;
 }
 #about-me-text{
-    color: #9e9b9e;
+    color: white;
 }
 #about-title{
     color: #777377;
@@ -234,17 +287,24 @@ h1{
     padding-left: 0px;
     margin-bottom: 4px; /* Adjust the padding-left as needed */
 }
-#popover-button{
-    background-color: #3E274A;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease-in-out; 
+#popover-button {
+    background-color: #43264b;
+    border: none;
+    box-shadow: 0px 5px 18px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-radius: 10px;
 }
+
 #popover-button:hover,
 #popover-button:active {
-    transform: scale(1.05); /* Adjust the scale factor as needed */
-    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.3);
-    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.6), 0px 0px 8px rgba(0, 0, 0, 0.1);
 }
+
+#box-container {
+    background-color: #6b3f75; /* New box-container background color */
+}
+
 /* ------------------- Larger Screens ------------------- */
 @media all and (min-width: 992px) {
     .py-custom{
@@ -258,19 +318,19 @@ h1{
         margin-left: 10px;
         margin-right: 70px;
         margin-top: 10px;
-        padding-bottom: 10px;
+        padding-bottom: 25px;
         border-radius: 10px;
         padding-top:30px;
         padding-left: 50px;
         padding-right: 10px;
-        box-shadow:  -5px 7px 15px #140d18;
+        box-shadow:  -6px 7px 25px #140d18;
     }
     #popover-button{
         width: auto; 
         padding: 10px 30px;
         flex-grow: 1;
         margin: 17px;
-        margin-top: 0px;
+        margin-top: 10px;
     }
     .popover-header {
         font-size: 19px;
@@ -374,6 +434,211 @@ h1{
         --bs-popover-body-padding-y: .5rem;
     }
 }
+/* ------------------- Projects Page ------------------- */
+.project-title {
+    color: white;
+    font-family: 'Poppins';
+}
+.project-text {
+    font-family: 'Poppins';
+    color: white;    
+    text-justify: inter-word;
+}
+.project-ul{
+    list-style: none;
+    display: inline-block;
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: flex;
+}
+.project-sort{
+    color: white;
+    font-family: 'Poppins';
+}
+.project-card-title{
+    font-family: 'Space Grotesk', sans-serif!important;
+    font-weight: bold!important;
+    color: white;
+}
+.project-card-text{
+    color: white;
+    font-family: 'Poppins';
+}
+#clock-app{
+    max-width: 100%;
+}
+#other-card{
+    background-color: #2B1B33;
+}
+.video-container {
+    overflow: hidden;
+    border: none;
+    outline: none;
+}
+video{
+    display: block;
+}
+/* ------------------- Large Screens ------------------- */
+@media all and (min-width: 992px) {
+    .video-container {
+        height: 1000px!important;
+        max-width: 100%;
+        margin-top: -40px;
+        margin-left: 150px!important;
+    }
+    .project-title {
+        font-size: 8000px!important;
+        line-height: 160px!important;
+        margin-top: 40px!important;
+    }
+    .project-text {
+        margin-left: 10px;
+        margin-top: 20px;
+        margin-right: -100px;
+        font-size: 20px;
+    }
+    #projects-items{
+        margin-top: 20px;
+    }
+    #project-card-container{
+        max-width: 100%; 
+    }
+    .project-ul{
+        margin-left: 20px!important;
+        font-size: 15px;
+    }
+    .project-sort{
+        margin-right: 10px; 
+    }
+    .project-card-title{
+        font-size: 25px;
+        padding-top: 15px;
+        margin-left: 20px;
+    }
+    .project-card-text{
+        margin-left: 20px;
+    }
+    #other-card{
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    }
+    .container-project{
+        margin-bottom: 500px;
+        right: -900px;
+        padding-top: 90px;
+    }
+    .home-project{
+        margin-top: -880px;
+        margin-bottom: -100px;
+    }
+}
+
+/* ------------------- Medium Screens ------------------- */
+@media all and (min-width: 640px) {
+    .video-container {
+        height: 800px;
+        max-width: 100%;
+        margin-left: 50px;
+    }
+    video{
+        overflow: hidden!important;
+        border: none!important;
+        outline: none!important;
+        display: block!important;
+        width:100%;
+    }
+    .project-title {
+        font-size: 120px!important;
+        line-height: 160px!important;
+    }
+    .project-text {
+        margin-top: 10px;
+        font-size: 20px;
+        text-align: justify;
+    }
+    #projects-items{
+        margin-top: 20px;
+    }
+    #project-card-container{
+        max-width: 100%; 
+    }
+    .project-ul{
+        font-size: 10px;
+    }
+    .project-sort{
+        margin-right: 10px; 
+    }
+    .project-card-title{
+        font-size: 25px;
+        padding-top: 15px;
+        margin-left: 20px;
+    }
+    .project-card-text{
+        margin-left: 20px;
+    }
+    #other-card{
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    }
+    .container-project{
+        margin-bottom: 500px;
+        right: -900px;
+    }
+    .home-project{
+        margin-top: -880px;
+        margin-bottom: -100px;
+    }
+}
+
+/* ------------------- Smaller Screens ------------------- */
+@media all and (max-width: 640px) {
+    .video-container {
+        height: 800px;
+        max-width: 100%;
+    }
+    .project-title {
+        font-size: 80px!important;
+        line-height: 160px!important;
+    }
+    .project-text {
+        margin-top: 10px;
+        font-size: 14px;
+        text-align: justify;
+    }
+    #projects-items{
+        margin-top: 20px;
+    }
+    #project-card-container{
+        max-width: 100%; 
+    }
+    .project-ul{
+        font-size: 10px;
+    }
+    .project-sort{
+        margin-right: 10px; 
+    }
+    .project-card-title{
+        font-size: 25px;
+        padding-top: 15px;
+        margin-left: 20px;
+    }
+    .project-card-text{
+        margin-left: 20px;
+    }
+    #other-card{
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    }
+    .container-project{
+        margin-bottom: 500px;
+        right: -900px;
+    }
+    .home-project{
+        margin-top: -880px;
+        margin-bottom: -100px;
+    }
+}
+
 /* ------------------- Experience Page ------------------- */
 .box-exp{
     padding: 10px;
@@ -406,6 +671,7 @@ h1{
     font-weight: 200;
     letter-spacing: 1px;
     font-size: 22px;
+    margin-top: 40px!important;
 }
 /* ------------------- Large Screens ------------------- */
 @media all and (min-width: 992px) {
@@ -430,6 +696,7 @@ h1{
         margin-right: 20px;
         margin-left: 50px;
     }
+
 }
 /* ------------------- Smaller Screens ------------------- */
 @media all and (max-width: 992px) {
@@ -690,10 +957,10 @@ a.contact-link:hover{
     }
 
     .form-container {
-        width: 300px;
+        width: 300px!important;
         height: 400px;
         margin-top: 20px;
-        margin-left: 17%;
+        margin-left: 30%!important;
         padding: 20px 25px;
     }
 }
@@ -747,7 +1014,7 @@ a.contact-link:hover{
         width: 300px;
         height: 400px;
         margin-top: 20px;
-        margin-left: 5%;
+        margin-left: 10%!important;
         padding: 20px 25px;
     }
     .form-container .input-box {
@@ -882,13 +1149,16 @@ a.contact-link:hover{
     footer svg{
         width: 20px;
     }
+    .contact-title{
+        padding-left: 70px;
+    }
 }
 /* ------------------- Custom Scroll Bar ------------------- */
 ::-webkit-scrollbar {
     width: 15px;
 }
 ::-webkit-scrollbar-track {
-    background: #2F1E38;
+    background: #372441;
 }
 ::-webkit-scrollbar-thumb {
     background: #2B1B33;
