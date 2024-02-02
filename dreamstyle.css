@@ -289,6 +289,15 @@ footer p{
     margin-left: 0px;
     margin-right: 0px;
 }
+footer p{
+    color: white;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 15px;
+}
+.footer-container{
+    margin-left: 80px;
+}
 }
 /* ------------------- Custom Scroll Bar ------------------- */
 ::-webkit-scrollbar {
