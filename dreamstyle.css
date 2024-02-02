@@ -249,14 +249,45 @@ footer p{
 }
 @media all and (max-width: 640px){
     .list-group-horizontal li {
-    max-width:90px; /* Adjust the max-width as needed */
-    margin-left: 10px; 
+    max-width:120px; /* Adjust the max-width as needed */
+    margin-left: 0px; 
     text-align: left;/* Push the list to the right edge */
     background-color: transparent;
     border: none;
     color: #BCC5C6;
     font-weight: 500;
     font-size: 18px;
+}
+.header-container h1{
+    font-size: 50px;
+    font-family: 'Poppins';
+    line-height: 60px;
+}
+.desc-title {
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    border-top: 1px solid #BCC5C6;
+    padding-top: 10px;
+}
+.header-container{
+    margin-left: 0px;
+    margin-right: 0px;
+    color: white;
+    margin-left: 0px
+}
+#overall-container{
+    margin-bottom: 100px;
+    margin-top: 30px;
+    margin-left: 0px;
+}
+.list-group-item {
+    text-align: right;
+    margin-left: 0px; /* Adjust the margin as needed */
+}
+.app-container{
+    margin-left: 0px;
+    margin-right: 0px;
 }
 }
 /* ------------------- Custom Scroll Bar ------------------- */
