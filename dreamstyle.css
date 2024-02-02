@@ -247,6 +247,18 @@ footer p{
     border-top: 1px solid #BCC5C6;
     padding-top: 10px;
 }
+@media all and (max-width: 640px){
+    .list-group-horizontal li {
+    max-width:90px; /* Adjust the max-width as needed */
+    margin-left: 10px; 
+    text-align: left;/* Push the list to the right edge */
+    background-color: transparent;
+    border: none;
+    color: #BCC5C6;
+    font-weight: 500;
+    font-size: 18px;
+}
+}
 /* ------------------- Custom Scroll Bar ------------------- */
 ::-webkit-scrollbar {
     width: 15px;
